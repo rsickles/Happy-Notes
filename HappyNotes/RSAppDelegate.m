@@ -7,15 +7,14 @@
 //
 
 #import "RSAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation RSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [Parse setApplicationId:@"TdZWatKFZMErDGiKmnXICY1hUr74W7kt1aN0GMXh"
+                  clientKey:@"uG0WpvScoxTX4d9VW9sK2eEDdi1tfixXkSLHec0Y"];
     return YES;
 }
 

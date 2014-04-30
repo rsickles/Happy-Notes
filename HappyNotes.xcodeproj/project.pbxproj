@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922E170A190D7C2E0010CF1E /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E1709190D7C2E0010CF1E /* EditFriendsViewController.m */; };
+		922E170D190D8B100010CF1E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E170C190D8B100010CF1E /* FriendsViewController.m */; };
+		922E1710190EC37B0010CF1E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E170F190EC37B0010CF1E /* NotesViewController.m */; };
+		92347EFD1910098D00047060 /* RecepientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347EFC1910098D00047060 /* RecepientsViewController.m */; };
 		92E6354A1905C53A00DDA6FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635491905C53A00DDA6FC /* Foundation.framework */; };
 		92E6354C1905C53A00DDA6FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6354B1905C53A00DDA6FC /* CoreGraphics.framework */; };
 		92E6354E1905C53A00DDA6FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6354D1905C53A00DDA6FC /* UIKit.framework */; };
@@ -19,6 +23,20 @@
 		92E635651905C53A00DDA6FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6354D1905C53A00DDA6FC /* UIKit.framework */; };
 		92E6356D1905C53A00DDA6FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92E6356B1905C53A00DDA6FC /* InfoPlist.strings */; };
 		92E6356F1905C53A00DDA6FC /* HappyNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E6356E1905C53A00DDA6FC /* HappyNotesTests.m */; };
+		92E635791905D0AA00DDA6FC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E635781905D0AA00DDA6FC /* MainStoryboard.storyboard */; };
+		92E6357C1909EA2C00DDA6FC /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E6357B1909EA2C00DDA6FC /* InboxViewController.m */; };
+		92E635881909F10E00DDA6FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6357F1909F10E00DDA6FC /* AudioToolbox.framework */; };
+		92E635891909F10E00DDA6FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635801909F10E00DDA6FC /* CFNetwork.framework */; };
+		92E6358A1909F10E00DDA6FC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635811909F10E00DDA6FC /* CoreLocation.framework */; };
+		92E6358C1909F10E00DDA6FC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635831909F10E00DDA6FC /* MobileCoreServices.framework */; };
+		92E6358D1909F10E00DDA6FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635841909F10E00DDA6FC /* QuartzCore.framework */; };
+		92E6358E1909F10E00DDA6FC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635851909F10E00DDA6FC /* Security.framework */; };
+		92E6358F1909F10E00DDA6FC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635861909F10E00DDA6FC /* StoreKit.framework */; };
+		92E635901909F10E00DDA6FC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635871909F10E00DDA6FC /* SystemConfiguration.framework */; };
+		92E635941909F41B00DDA6FC /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635931909F41B00DDA6FC /* libz.1.1.3.dylib */; };
+		92E635981909F67200DDA6FC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635971909F67200DDA6FC /* Parse.framework */; };
+		92E6359B190C903400DDA6FC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E6359A190C903400DDA6FC /* LoginViewController.m */; };
+		92E6359E190C908000DDA6FC /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E6359D190C908000DDA6FC /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		922E1708190D7C2E0010CF1E /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
+		922E1709190D7C2E0010CF1E /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
+		922E170B190D8B100010CF1E /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		922E170C190D8B100010CF1E /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		922E170E190EC37B0010CF1E /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		922E170F190EC37B0010CF1E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		92347EFB1910098D00047060 /* RecepientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecepientsViewController.h; sourceTree = "<group>"; };
+		92347EFC1910098D00047060 /* RecepientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecepientsViewController.m; sourceTree = "<group>"; };
 		92E635461905C53A00DDA6FC /* HappyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E635491905C53A00DDA6FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92E6354B1905C53A00DDA6FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +74,23 @@
 		92E6356A1905C53A00DDA6FC /* HappyNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HappyNotesTests-Info.plist"; sourceTree = "<group>"; };
 		92E6356C1905C53A00DDA6FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92E6356E1905C53A00DDA6FC /* HappyNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyNotesTests.m; sourceTree = "<group>"; };
+		92E635781905D0AA00DDA6FC /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		92E6357A1909EA2C00DDA6FC /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		92E6357B1909EA2C00DDA6FC /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		92E6357F1909F10E00DDA6FC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		92E635801909F10E00DDA6FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		92E635811909F10E00DDA6FC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		92E635831909F10E00DDA6FC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		92E635841909F10E00DDA6FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		92E635851909F10E00DDA6FC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		92E635861909F10E00DDA6FC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		92E635871909F10E00DDA6FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92E635931909F41B00DDA6FC /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		92E635971909F67200DDA6FC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		92E63599190C903400DDA6FC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		92E6359A190C903400DDA6FC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		92E6359C190C908000DDA6FC /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		92E6359D190C908000DDA6FC /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +98,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E635941909F41B00DDA6FC /* libz.1.1.3.dylib in Frameworks */,
+				92E635881909F10E00DDA6FC /* AudioToolbox.framework in Frameworks */,
+				92E635891909F10E00DDA6FC /* CFNetwork.framework in Frameworks */,
+				92E6358A1909F10E00DDA6FC /* CoreLocation.framework in Frameworks */,
+				92E6358C1909F10E00DDA6FC /* MobileCoreServices.framework in Frameworks */,
+				92E6358D1909F10E00DDA6FC /* QuartzCore.framework in Frameworks */,
+				92E635981909F67200DDA6FC /* Parse.framework in Frameworks */,
+				92E6358E1909F10E00DDA6FC /* Security.framework in Frameworks */,
+				92E6358F1909F10E00DDA6FC /* StoreKit.framework in Frameworks */,
+				92E635901909F10E00DDA6FC /* SystemConfiguration.framework in Frameworks */,
 				92E6354C1905C53A00DDA6FC /* CoreGraphics.framework in Frameworks */,
 				92E6354E1905C53A00DDA6FC /* UIKit.framework in Frameworks */,
 				92E6354A1905C53A00DDA6FC /* Foundation.framework in Frameworks */,
@@ -96,6 +149,16 @@
 		92E635481905C53A00DDA6FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92E635971909F67200DDA6FC /* Parse.framework */,
+				92E635931909F41B00DDA6FC /* libz.1.1.3.dylib */,
+				92E6357F1909F10E00DDA6FC /* AudioToolbox.framework */,
+				92E635801909F10E00DDA6FC /* CFNetwork.framework */,
+				92E635811909F10E00DDA6FC /* CoreLocation.framework */,
+				92E635831909F10E00DDA6FC /* MobileCoreServices.framework */,
+				92E635841909F10E00DDA6FC /* QuartzCore.framework */,
+				92E635851909F10E00DDA6FC /* Security.framework */,
+				92E635861909F10E00DDA6FC /* StoreKit.framework */,
+				92E635871909F10E00DDA6FC /* SystemConfiguration.framework */,
 				92E635491905C53A00DDA6FC /* Foundation.framework */,
 				92E6354B1905C53A00DDA6FC /* CoreGraphics.framework */,
 				92E6354D1905C53A00DDA6FC /* UIKit.framework */,
@@ -108,6 +171,21 @@
 			isa = PBXGroup;
 			children = (
 				92E635581905C53A00DDA6FC /* RSAppDelegate.h */,
+				92E635781905D0AA00DDA6FC /* MainStoryboard.storyboard */,
+				92347EFB1910098D00047060 /* RecepientsViewController.h */,
+				92347EFC1910098D00047060 /* RecepientsViewController.m */,
+				922E1708190D7C2E0010CF1E /* EditFriendsViewController.h */,
+				922E1709190D7C2E0010CF1E /* EditFriendsViewController.m */,
+				922E170B190D8B100010CF1E /* FriendsViewController.h */,
+				922E170C190D8B100010CF1E /* FriendsViewController.m */,
+				922E170E190EC37B0010CF1E /* NotesViewController.h */,
+				922E170F190EC37B0010CF1E /* NotesViewController.m */,
+				92E6357A1909EA2C00DDA6FC /* InboxViewController.h */,
+				92E6357B1909EA2C00DDA6FC /* InboxViewController.m */,
+				92E63599190C903400DDA6FC /* LoginViewController.h */,
+				92E6359A190C903400DDA6FC /* LoginViewController.m */,
+				92E6359C190C908000DDA6FC /* SignUpViewController.h */,
+				92E6359D190C908000DDA6FC /* SignUpViewController.m */,
 				92E635591905C53A00DDA6FC /* RSAppDelegate.m */,
 				92E6355B1905C53A00DDA6FC /* Images.xcassets */,
 				92E635501905C53A00DDA6FC /* Supporting Files */,
@@ -220,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E635791905D0AA00DDA6FC /* MainStoryboard.storyboard in Resources */,
 				92E635541905C53A00DDA6FC /* InfoPlist.strings in Resources */,
 				92E6355C1905C53A00DDA6FC /* Images.xcassets in Resources */,
 			);
@@ -240,8 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922E1710190EC37B0010CF1E /* NotesViewController.m in Sources */,
+				92347EFD1910098D00047060 /* RecepientsViewController.m in Sources */,
+				92E6359B190C903400DDA6FC /* LoginViewController.m in Sources */,
+				92E6359E190C908000DDA6FC /* SignUpViewController.m in Sources */,
+				922E170D190D8B100010CF1E /* FriendsViewController.m in Sources */,
 				92E635561905C53A00DDA6FC /* main.m in Sources */,
 				92E6355A1905C53A00DDA6FC /* RSAppDelegate.m in Sources */,
+				922E170A190D7C2E0010CF1E /* EditFriendsViewController.m in Sources */,
+				92E6357C1909EA2C00DDA6FC /* InboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +444,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Hova/Downloads,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappyNotes/HappyNotes-Prefix.pch";
 				INFOPLIST_FILE = "HappyNotes/HappyNotes-Info.plist";
@@ -371,6 +462,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Hova/Downloads,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappyNotes/HappyNotes-Prefix.pch";
 				INFOPLIST_FILE = "HappyNotes/HappyNotes-Info.plist";
@@ -438,6 +534,7 @@
 				92E635741905C53A00DDA6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92E635751905C53A00DDA6FC /* Build configuration list for PBXNativeTarget "HappyNotesTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +543,7 @@
 				92E635771905C53A00DDA6FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
