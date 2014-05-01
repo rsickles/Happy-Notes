@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92252CCB1911600A00BF9979 /* inbox-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CCA1911600A00BF9979 /* inbox-512.png */; };
+		92252CCD191160BD00BF9979 /* inbox-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CCC191160BD00BF9979 /* inbox-25.png */; };
+		92252CCF1911610000BF9979 /* meeting-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CCE1911610000BF9979 /* meeting-25.png */; };
+		92252CD11911612B00BF9979 /* meeting-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CD01911612B00BF9979 /* meeting-50.png */; };
+		92252CD31911614200BF9979 /* meeting-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CD21911614200BF9979 /* meeting-32.png */; };
+		92252CD51911618500BF9979 /* inbox-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CD41911618500BF9979 /* inbox-32.png */; };
+		92252CD71911620A00BF9979 /* message-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CD61911620A00BF9979 /* message-32.png */; };
+		92252CD9191180EE00BF9979 /* read_message-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CD8191180EE00BF9979 /* read_message-32.png */; };
+		92252CDB1911948800BF9979 /* sent-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 92252CDA1911948800BF9979 /* sent-32.png */; };
 		922E170A190D7C2E0010CF1E /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E1709190D7C2E0010CF1E /* EditFriendsViewController.m */; };
 		922E170D190D8B100010CF1E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E170C190D8B100010CF1E /* FriendsViewController.m */; };
 		922E1710190EC37B0010CF1E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E170F190EC37B0010CF1E /* NotesViewController.m */; };
@@ -50,6 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92252CCA1911600A00BF9979 /* inbox-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox-512.png"; sourceTree = "<group>"; };
+		92252CCC191160BD00BF9979 /* inbox-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox-25.png"; sourceTree = "<group>"; };
+		92252CCE1911610000BF9979 /* meeting-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meeting-25.png"; sourceTree = "<group>"; };
+		92252CD01911612B00BF9979 /* meeting-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meeting-50.png"; sourceTree = "<group>"; };
+		92252CD21911614200BF9979 /* meeting-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meeting-32.png"; sourceTree = "<group>"; };
+		92252CD41911618500BF9979 /* inbox-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox-32.png"; sourceTree = "<group>"; };
+		92252CD61911620A00BF9979 /* message-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-32.png"; sourceTree = "<group>"; };
+		92252CD8191180EE00BF9979 /* read_message-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read_message-32.png"; sourceTree = "<group>"; };
+		92252CDA1911948800BF9979 /* sent-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sent-32.png"; sourceTree = "<group>"; };
 		922E1708190D7C2E0010CF1E /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
 		922E1709190D7C2E0010CF1E /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
 		922E170B190D8B100010CF1E /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
@@ -180,6 +198,7 @@
 				922E170C190D8B100010CF1E /* FriendsViewController.m */,
 				922E170E190EC37B0010CF1E /* NotesViewController.h */,
 				922E170F190EC37B0010CF1E /* NotesViewController.m */,
+				92252CDA1911948800BF9979 /* sent-32.png */,
 				92E6357A1909EA2C00DDA6FC /* InboxViewController.h */,
 				92E6357B1909EA2C00DDA6FC /* InboxViewController.m */,
 				92E63599190C903400DDA6FC /* LoginViewController.h */,
@@ -187,6 +206,14 @@
 				92E6359C190C908000DDA6FC /* SignUpViewController.h */,
 				92E6359D190C908000DDA6FC /* SignUpViewController.m */,
 				92E635591905C53A00DDA6FC /* RSAppDelegate.m */,
+				92252CCC191160BD00BF9979 /* inbox-25.png */,
+				92252CD8191180EE00BF9979 /* read_message-32.png */,
+				92252CD41911618500BF9979 /* inbox-32.png */,
+				92252CD61911620A00BF9979 /* message-32.png */,
+				92252CD21911614200BF9979 /* meeting-32.png */,
+				92252CD01911612B00BF9979 /* meeting-50.png */,
+				92252CCE1911610000BF9979 /* meeting-25.png */,
+				92252CCA1911600A00BF9979 /* inbox-512.png */,
 				92E6355B1905C53A00DDA6FC /* Images.xcassets */,
 				92E635501905C53A00DDA6FC /* Supporting Files */,
 			);
@@ -298,9 +325,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92252CD11911612B00BF9979 /* meeting-50.png in Resources */,
+				92252CCF1911610000BF9979 /* meeting-25.png in Resources */,
+				92252CDB1911948800BF9979 /* sent-32.png in Resources */,
+				92252CD9191180EE00BF9979 /* read_message-32.png in Resources */,
+				92252CCD191160BD00BF9979 /* inbox-25.png in Resources */,
 				92E635791905D0AA00DDA6FC /* MainStoryboard.storyboard in Resources */,
+				92252CD31911614200BF9979 /* meeting-32.png in Resources */,
+				92252CCB1911600A00BF9979 /* inbox-512.png in Resources */,
 				92E635541905C53A00DDA6FC /* InfoPlist.strings in Resources */,
 				92E6355C1905C53A00DDA6FC /* Images.xcassets in Resources */,
+				92252CD71911620A00BF9979 /* message-32.png in Resources */,
+				92252CD51911618500BF9979 /* inbox-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

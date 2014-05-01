@@ -23,14 +23,36 @@
     notes.delegate = self;
 }
 
+
+
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     
     [notes resignFirstResponder];
     return YES;
 }
+-(void)sendNote:(id)sender{
+    
+}
 
-- (IBAction)sendNote:(id)sender {
-     
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    CGRect newBounds = textField.bounds;
+    self.originalWidth = &(newBounds.size.width);
+    newBounds.size.width = 300; //whatever you want the new width to be
+    
+    [UIView beginAnimations:nil context:nil];
+    textField.bounds = newBounds;
+    [UIView commitAnimations];
+    return YES;
+}
+
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    CGRect newBounds = textField.bounds;
+    newBounds.size.width = 120; //whatever you want the new width to be
+    
+    [UIView beginAnimations:nil context:nil];
+    textField.bounds = newBounds;
+    [UIView commitAnimations];
+    return YES;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -39,6 +61,8 @@
     {
         RecepientsViewController *viewController = (RecepientsViewController *)segue.destinationViewController;
         viewController.notes = self.notes;
+
+
         
     }
 }

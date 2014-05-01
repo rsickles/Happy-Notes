@@ -44,6 +44,9 @@
 
 
 
+
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
@@ -102,6 +105,7 @@
     else{
         [self uploadMessage];
         [self.tabBarController setSelectedIndex:0];
+        self.notes.text = nil;
     }
     
 }

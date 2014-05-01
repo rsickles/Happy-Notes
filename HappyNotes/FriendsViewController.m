@@ -49,11 +49,14 @@
 {
  if([segue.identifier isEqualToString:@"showEditFriends"] )
  {
+     
      EditFriendsViewController *viewController = (EditFriendsViewController *)segue.destinationViewController;
      viewController.friends = [NSMutableArray arrayWithArray:self.friends];
      
  }
 }
+
+
 
 #pragma mark - Table view data source
 

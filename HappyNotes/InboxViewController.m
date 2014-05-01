@@ -18,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    NSTimer* myTimer = [NSTimer scheduledTimerWithTimeInterval: 5.0 target: self
+//                                                selector: @selector(refresh) userInfo: nil repeats: YES];
     PFUser *currentUser = [PFUser currentUser];
     if(currentUser)
     {
@@ -31,7 +33,7 @@
     //refreshing icon
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
                                         init];
-    refreshControl.tintColor = [UIColor lightGrayColor];
+    refreshControl.tintColor = [UIColor greenColor];
     [refreshControl addTarget:self action:@selector(changeSorting) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
     
@@ -92,8 +94,12 @@
     //Get location of the swipe
     CGPoint location = [gestureRecognizer locationInView:self.tableView];
     
+    
+    
     //Get the corresponding index path within the table view
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:location];
+    self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
+    
     
     //Check if index path is valid
     if(indexPath)
@@ -111,20 +117,20 @@
 -(void)deleteMessage{
     NSMutableArray *recipientIds = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recipientIds"]];
     NSLog(@"%@",self.selectedMessage);
-    NSLog(@"Recipients %@", recipientIds);
+    NSLog(@"Recipients %@", [[PFUser currentUser] objectId]);
     if([recipientIds count] == 1){
         [self.selectedMessage deleteInBackground];
     }
     else{
         [recipientIds removeObject:[[PFUser currentUser] objectId]];
-        [self.selectedMessage setObject:recipientIds forKey:@"recipientsIds"];
+        [self.selectedMessage setObject:recipientIds forKey:@"recipientIds"];
         [self.selectedMessage saveInBackground];
     }
+    [self refresh];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
     PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
     [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser]objectId]];
     [query orderByDescending:@"createdAt"];
@@ -138,6 +144,22 @@
         }
     }];
 }
+
+-(void)refresh{
+    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
+    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser]objectId]];
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(error){
+            
+        }
+        else{
+            self.messages = objects;
+            [self.tableView reloadData];
+        }
+    }];
+}
+
 
 - (IBAction)logout:(id)sender {
     [PFUser logOut];
@@ -158,7 +180,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
+    //self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
+    
+    //NSLog(@"Message Selected %@",[self.messages objectAtIndex:indexPath.row]);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -178,7 +202,10 @@
     NSMutableString *spacing = @" - ";
     NSMutableString *firstHalf = [messageSender stringByAppendingString:spacing];
     NSString *messageFull = [firstHalf stringByAppendingString:messageContent];
+   
+    //customizing cells
     cell.textLabel.text = messageFull;
+    cell.imageView.image = [UIImage imageNamed:@"read_message-32.png"];
     
     //can add an icon next to each text
     //cell.imageView.image = firstHalf;//[UIImage imageNamed:@"filename"];

@@ -11,6 +11,7 @@
 @interface NotesViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong,nonatomic) IBOutlet UITextField *notes;
+@property CGFloat *originalWidth;
 - (IBAction)sendNote:(id)sender;
 
 

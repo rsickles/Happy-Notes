@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="34" y="116"/>
         </scene>
-        <!--Notes View Controller - Happy Notes-->
+        <!--Notes View Controller - Send Note-->
         <scene sceneID="LRA-1I-ldM">
             <objects>
                 <viewController id="JWf-vq-WCh" customClass="NotesViewController" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYO-RO-RcH">
-                                <rect key="frame" x="20" y="136" width="280" height="30"/>
+                                <rect key="frame" x="100" y="136" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -50,14 +50,14 @@
                                 </state>
                                 <connections>
                                     <action selector="sendNote:" destination="JWf-vq-WCh" eventType="touchUpInside" id="JlJ-cX-v90"/>
-                                    <segue destination="gZ2-rZ-RwT" kind="push" identifier="addRecep" id="nXO-6s-yeB"/>
+                                    <segue destination="gZ2-rZ-RwT" kind="push" identifier="addRecep" customClass="UIStoryboardPopoverSegue" id="nXO-6s-yeB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
-                    <navigationItem key="navigationItem" title="Happy Notes" id="EBu-y5-gTJ"/>
+                    <navigationItem key="navigationItem" title="Send Note" id="EBu-y5-gTJ"/>
                     <connections>
                         <outlet property="notes" destination="bYO-RO-RcH" id="vSV-RO-qe2"/>
                     </connections>
@@ -66,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="576" y="743"/>
         </scene>
-        <!--Recepients View Controller - Receipients-->
+        <!--Recepients View Controller - Recipients-->
         <scene sceneID="chs-NM-jxc">
             <objects>
                 <tableViewController id="gZ2-rZ-RwT" customClass="RecepientsViewController" sceneMemberID="viewController">
@@ -89,8 +89,9 @@
                             <outlet property="delegate" destination="gZ2-rZ-RwT" id="PW8-zW-f4x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Receipients" id="q1o-13-5mR">
-                        <barButtonItem key="rightBarButtonItem" title="Send" id="RBq-RL-KxR">
+                    <navigationItem key="navigationItem" title="Recipients" id="q1o-13-5mR">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="d4R-rj-dgB"/>
+                        <barButtonItem key="rightBarButtonItem" image="sent-32.png" id="RBq-RL-KxR">
                             <connections>
                                 <action selector="send:" destination="gZ2-rZ-RwT" id="FBS-KN-XDy"/>
                             </connections>
@@ -101,7 +102,7 @@
             </objects>
             <point key="canvasLocation" x="576" y="1398"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login View Controller - Happy Notes-->
         <scene sceneID="M9E-yr-BTT">
             <objects>
                 <viewController id="x3J-Q5-W1Y" customClass="LoginViewController" sceneMemberID="viewController">
@@ -136,9 +137,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-2Z-vt9">
-                                <rect key="frame" x="11" y="211" width="289" height="30"/>
+                                <rect key="frame" x="203" y="194" width="117" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,10 +148,17 @@
                                     <segue destination="OkD-ql-1Kh" kind="push" id="3Cw-Sb-Qu0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't Have An Account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQr-n1-gkl">
+                                <rect key="frame" x="20" y="201" width="190" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eo7-Sd-np2"/>
+                    <navigationItem key="navigationItem" title="Happy Notes" id="eo7-Sd-np2"/>
                     <connections>
                         <outlet property="passwordField" destination="UIq-Hq-BHt" id="Bvt-3D-bL7"/>
                         <outlet property="usernameField" destination="smX-Pd-IQd" id="8ng-g4-pk7"/>
@@ -224,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="2008" y="382"/>
         </scene>
-        <!--Inbox View Controller - Happy Notes-->
+        <!--Inbox View Controller - Inbox-->
         <scene sceneID="2oC-Nc-Goe">
             <objects>
                 <tableViewController id="sQg-uj-vcw" customClass="InboxViewController" sceneMemberID="viewController">
@@ -250,7 +258,7 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="RU7-HO-ghy"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Happy Notes" id="NEX-Ry-rGH">
+                    <navigationItem key="navigationItem" title="Inbox" id="NEX-Ry-rGH">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="dXJ-6e-Mnm">
                             <connections>
                                 <action selector="logout:" destination="sQg-uj-vcw" id="LRa-zU-SDr"/>
@@ -284,7 +292,7 @@
             </objects>
             <point key="canvasLocation" x="1521" y="-218"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign Up View Controller - Happy Notes-->
         <scene sceneID="PQg-N8-T0s">
             <objects>
                 <viewController id="OkD-ql-1Kh" customClass="SignUpViewController" sceneMemberID="viewController">
@@ -327,7 +335,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JVF-kX-Fnh"/>
+                    <navigationItem key="navigationItem" title="Happy Notes" id="JVF-kX-Fnh"/>
                     <connections>
                         <outlet property="emailField" destination="Cjn-8Q-pDk" id="fBN-gQ-GtF"/>
                         <outlet property="passwordField" destination="ru5-il-GBZ" id="ZYa-H0-nP4"/>
@@ -342,7 +350,7 @@
         <scene sceneID="cSW-yp-Mbu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qSs-0v-Rfz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Inbox" id="b3V-eT-LUk"/>
+                    <tabBarItem key="tabBarItem" title="Inbox" image="inbox-32.png" id="b3V-eT-LUk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JJp-TS-Yc0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -361,7 +369,7 @@
         <scene sceneID="qyK-ab-Zbf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SmC-DD-an2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="LUs-S3-1x5"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="meeting-32.png" id="LUs-S3-1x5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T13-qx-twU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -380,7 +388,7 @@
         <scene sceneID="TVF-l6-X4p">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DK1-cz-LH7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Send Note" id="FMP-B3-xO3"/>
+                    <tabBarItem key="tabBarItem" title="Send Note" image="message-32.png" id="FMP-B3-xO3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m4I-eY-OmL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -396,6 +404,12 @@
             <point key="canvasLocation" x="50" y="743"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="inbox-32.png" width="32" height="32"/>
+        <image name="meeting-32.png" width="32" height="32"/>
+        <image name="message-32.png" width="32" height="32"/>
+        <image name="sent-32.png" width="32" height="32"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
