@@ -12,6 +12,7 @@ Happy Notes is an application for quickly sending short reminders and notes to f
 * Fluid UX for user messsage creation and transmisson.
 * Touch gestures for message management.
 * Screen and textfield animation.
+
 ###Future Functionality And User Experience
 * In app note management and storage.
 * Compatibility with Evernote.
