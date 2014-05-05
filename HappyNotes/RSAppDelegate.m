@@ -15,6 +15,25 @@
 {
     [Parse setApplicationId:@"TdZWatKFZMErDGiKmnXICY1hUr74W7kt1aN0GMXh"
                   clientKey:@"uG0WpvScoxTX4d9VW9sK2eEDdi1tfixXkSLHec0Y"];
+    
+
+    //change background image
+    UIImage *navBackgroundImage = [UIImage imageNamed:@"green_bg.jpg"];
+    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    
+    //change background font
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor colorWithRed:0.0/255.0 green:201.0/255.0 blue:87.0/255.0 alpha:1.0], UITextAttributeTextColor,[UIFont fontWithName:@"ChalkboardSE-Regular" size:24.0], UITextAttributeFont, nil]];
+    
+    //changes all bottom tab bar appearance
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.0/255.0 green:201.0/255.0 blue:87.0/255.0 alpha:1.0]];
+    
+    
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:170.0/255.0 green:254.0/255.0 blue:140.0/255.0 alpha:1.0]];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.0/255.0 green:201.0/255.0 blue:87.0/255.0 alpha:1.0], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+    
+    
+    
+
     return YES;
 }
 

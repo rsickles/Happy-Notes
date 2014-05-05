@@ -21,6 +21,8 @@
 {
     [super viewDidLoad];
     notes.delegate = self;
+    //changes the background of the view controller
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"green_bg.jpg"]];
 }
 
 

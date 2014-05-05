@@ -21,6 +21,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //changes the background of the view controller
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"green_bg.jpg"]];
 }
 
 - (IBAction)signup:(id)sender {

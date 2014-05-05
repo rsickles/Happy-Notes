@@ -18,8 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    NSTimer* myTimer = [NSTimer scheduledTimerWithTimeInterval: 5.0 target: self
-//                                                selector: @selector(refresh) userInfo: nil repeats: YES];
+    //changes the background of the view controller
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"green_bg.jpg"]];
+    
+    
     PFUser *currentUser = [PFUser currentUser];
     if(currentUser)
     {
@@ -108,7 +110,7 @@
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
         
         //Update the cell or model
-        cell.backgroundColor = [UIColor redColor];
+        cell.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:201.0/255.0 blue:87.0/255.0 alpha:1.0];
         //delete message
         [self deleteMessage];
     }
@@ -206,6 +208,9 @@
     //customizing cells
     cell.textLabel.text = messageFull;
     cell.imageView.image = [UIImage imageNamed:@"read_message-32.png"];
+    cell.contentView.backgroundColor = [ UIColor colorWithRed:170.0/255.0 green:254.0/255.0 blue:140.0/255.0 alpha:1.0 ];
+    cell.textLabel.backgroundColor = [ UIColor colorWithRed:170.0/255.0 green:254.0/255.0 blue:140.0/255.0 alpha:1.0 ];
+    cell.textLabel.textColor = [ UIColor colorWithRed:0.0/255.0 green:201.0/255.0 blue:87.0/255.0 alpha:1.0 ];
     
     //can add an icon next to each text
     //cell.imageView.image = firstHalf;//[UIImage imageNamed:@"filename"];

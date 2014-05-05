@@ -20,6 +20,9 @@
 		922E170D190D8B100010CF1E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E170C190D8B100010CF1E /* FriendsViewController.m */; };
 		922E1710190EC37B0010CF1E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E170F190EC37B0010CF1E /* NotesViewController.m */; };
 		92347EFD1910098D00047060 /* RecepientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92347EFC1910098D00047060 /* RecepientsViewController.m */; };
+		92D00BC11916CB1C00DF8963 /* green_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92D00BC01916CB1C00DF8963 /* green_bg.jpg */; };
+		92D00BC31916CCEE00DF8963 /* green_dark_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 92D00BC21916CCEE00DF8963 /* green_dark_bg.png */; };
+		92D00BC51916CD2800DF8963 /* lightGreenSquare.gif in Resources */ = {isa = PBXBuildFile; fileRef = 92D00BC41916CD2800DF8963 /* lightGreenSquare.gif */; };
 		92E6354A1905C53A00DDA6FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E635491905C53A00DDA6FC /* Foundation.framework */; };
 		92E6354C1905C53A00DDA6FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6354B1905C53A00DDA6FC /* CoreGraphics.framework */; };
 		92E6354E1905C53A00DDA6FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6354D1905C53A00DDA6FC /* UIKit.framework */; };
@@ -76,6 +79,9 @@
 		922E170F190EC37B0010CF1E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		92347EFB1910098D00047060 /* RecepientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecepientsViewController.h; sourceTree = "<group>"; };
 		92347EFC1910098D00047060 /* RecepientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecepientsViewController.m; sourceTree = "<group>"; };
+		92D00BC01916CB1C00DF8963 /* green_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_bg.jpg; sourceTree = "<group>"; };
+		92D00BC21916CCEE00DF8963 /* green_dark_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green_dark_bg.png; sourceTree = "<group>"; };
+		92D00BC41916CD2800DF8963 /* lightGreenSquare.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lightGreenSquare.gif; sourceTree = "<group>"; };
 		92E635461905C53A00DDA6FC /* HappyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E635491905C53A00DDA6FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92E6354B1905C53A00DDA6FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,9 +212,12 @@
 				92E6359C190C908000DDA6FC /* SignUpViewController.h */,
 				92E6359D190C908000DDA6FC /* SignUpViewController.m */,
 				92E635591905C53A00DDA6FC /* RSAppDelegate.m */,
+				92D00BC41916CD2800DF8963 /* lightGreenSquare.gif */,
 				92252CCC191160BD00BF9979 /* inbox-25.png */,
+				92D00BC21916CCEE00DF8963 /* green_dark_bg.png */,
 				92252CD8191180EE00BF9979 /* read_message-32.png */,
 				92252CD41911618500BF9979 /* inbox-32.png */,
+				92D00BC01916CB1C00DF8963 /* green_bg.jpg */,
 				92252CD61911620A00BF9979 /* message-32.png */,
 				92252CD21911614200BF9979 /* meeting-32.png */,
 				92252CD01911612B00BF9979 /* meeting-50.png */,
@@ -326,10 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				92252CD11911612B00BF9979 /* meeting-50.png in Resources */,
+				92D00BC51916CD2800DF8963 /* lightGreenSquare.gif in Resources */,
 				92252CCF1911610000BF9979 /* meeting-25.png in Resources */,
 				92252CDB1911948800BF9979 /* sent-32.png in Resources */,
 				92252CD9191180EE00BF9979 /* read_message-32.png in Resources */,
+				92D00BC31916CCEE00DF8963 /* green_dark_bg.png in Resources */,
 				92252CCD191160BD00BF9979 /* inbox-25.png in Resources */,
+				92D00BC11916CB1C00DF8963 /* green_bg.jpg in Resources */,
 				92E635791905D0AA00DDA6FC /* MainStoryboard.storyboard in Resources */,
 				92252CD31911614200BF9979 /* meeting-32.png in Resources */,
 				92252CCB1911600A00BF9979 /* inbox-512.png in Resources */,

@@ -21,6 +21,8 @@
 {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
+    //changes the background of the view controller
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"green_bg.jpg"]];
     // Do any additional setup after loading the view.
 }
 
