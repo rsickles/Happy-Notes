@@ -10,10 +10,12 @@
 #import <Parse/Parse.h>
 
 @interface RecepientsViewController : UITableViewController
+@property (nonatomic,strong) UIImage *image;
 @property (nonatomic,strong) IBOutlet UITextField *notes;
 @property (nonatomic,strong) NSArray *friends;
 @property (nonatomic,strong) PFRelation *friendsRelation;
 @property (nonatomic,strong) NSMutableArray *recipients;
+- (UIImage *) resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height;
 - (IBAction)send:(id)sender;
 -(void)uploadMessage;
 
