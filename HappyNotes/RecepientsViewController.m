@@ -44,11 +44,6 @@
     }];
 }
 
-
-
-
-
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
